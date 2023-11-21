@@ -187,18 +187,48 @@ for(let contador = 0 ; contador < nomeAluno.length ; contador++){
 */
 // 9. Construir uma página na qual o usuário digitará o nome, o telefone e a cidade de seis pessoas
 // e o programa exibirá na tela, o nome e o telefone das pessoas que moram em “Niterói”.
-var pessoas = [];
-for (var i = 0; i < 3; i++) {
-    var nome = prompt('Digite o nome da pessoa:');
-    var telefone = prompt('Digite o telefone da pessoa:');
-    var cidade = prompt('Digite a cidade da pessoa:');
-    pessoas.push({ nome: nome, telefone: telefone, cidade: cidade });
+/*
+
+let pessoas: { nome: string; telefone: string; cidade: string }[] = [];
+
+
+for (let i = 0; i < 3; i++) {
+    let nome = prompt('Digite o nome da pessoa:');
+    let telefone = prompt('Digite o telefone da pessoa:');
+    let cidade = prompt('Digite a cidade da pessoa:');
+
+   
+    pessoas.push({ nome, telefone, cidade });
 }
 // Exibir informações no console
 console.log('Informações das pessoas de Niterói:');
-for (var iteracao = 0; iteracao < pessoas.length; iteracao++) {
-    var pessoa = pessoas[iteracao];
+for (let iteracao = 0; iteracao < pessoas.length; iteracao++) {
+let pessoa = pessoas[iteracao]
     if (pessoa.cidade.toLowerCase() == 'niterói') {
-        console.log("Nome: ".concat(pessoa.nome, ", Telefone: ").concat(pessoa.telefone, ", Cidade: ").concat(pessoa.cidade));
+        console.log(`Nome: ${pessoa.nome}, Telefone: ${pessoa.telefone}, Cidade: ${pessoa.cidade}`);
     }
+
 }
+
+*/
+// 10. Construir uma página na qual o usuário digitará o nome e a média de cinco alunos e o
+// programa só aceitará a média do aluno caso ela esteja entre 0 e 10.
+/*
+const alunos = [];
+
+for (let i = 0; i < 5; i++) {
+  let nome = prompt(`Digite o nome do aluno ${i + 1}:`);
+
+  let media;
+  do {
+    media = parseFloat(prompt(`Digite a média do aluno ${i + 1}:`));
+  } while (isNaN(media) || media < 0 || media > 10);
+
+  alunos.push({ nome, media });
+}
+
+console.log('Lista de alunos:');
+alunos.forEach(aluno => {
+  console.log(`Nome: ${aluno.nome}, Média: ${aluno.media}`);
+});
+*/ 

@@ -229,3 +229,23 @@ let pessoa = pessoas[iteracao]
 
 // 10. Construir uma página na qual o usuário digitará o nome e a média de cinco alunos e o
 // programa só aceitará a média do aluno caso ela esteja entre 0 e 10.
+
+/*
+const alunos = [];
+
+for (let i = 0; i < 5; i++) {
+  let nome = prompt(`Digite o nome do aluno ${i + 1}:`);
+
+  let media;
+  do {
+    media = parseFloat(prompt(`Digite a média do aluno ${i + 1}:`));
+  } while (isNaN(media) || media < 0 || media > 10);
+
+  alunos.push({ nome, media });
+}
+
+console.log('Lista de alunos:');
+alunos.forEach(aluno => {
+  console.log(`Nome: ${aluno.nome}, Média: ${aluno.media}`);
+});
+*/
